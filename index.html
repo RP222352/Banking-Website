@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Panja Bank</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/notifications.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lzDyTjzAofzfZKcvC5oCU5DMBDp5MPjFUIJ3OMMTZ8RO/ib7E2F77mHAU7t2GcCK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="headerDiv">
+        <div id="img" onclick="imgClick()">
+            <img src="image/bank logo 2.png" alt="logo" id="logo">
+        </div>
+
+        <div id="textHeader">
+            <h1 id="header1">Welcome to PANJA Bank</h1>
+            <h3 id="header2">Personal Banking, Online Banking, Transfer Money</h3>
+        </div>
+
+        <div id="icon">
+            <i class="gg-phone"></i>
+            <i class="gg-notifications"></i>
+        </div>
+    </div>
+    <br>
+    <div id="main">
+        <div id="login">
+            <h2>
+                Hello !!
+            </h2>
+            <h3>
+                Enter Your Details below
+            </h3>
+            <form action="">
+                <input type="text" id="username" name="username" placeholder="Enter Account Number *">
+                <br>
+                <input type="password" name="password" id="password" placeholder="Enter Password *">
+                <br>
+                <h5 id="forgetPass">Forgot Password?</h5>
+                <br><br>
+                <a href="LogIn.html" class="cta" id="LogInUser">
+                    <span id="newLogin">Log in</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </form>
+        </div>
+
+        <div id="newUser">
+            <br>
+            <h3>
+                Dont Have an Account ??
+            </h3>
+            <br><br>
+            <a href="NewUser.html" class="cta">
+                <span id="newLogin2">Create a New Account</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p class="get-social">Get Social:</p>
+        
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <br>
+        <div class="footer3">
+            <a href="#">About Us</a>
+            <a href="#">Customer Care</a>
+            <a href="#">Locate Us</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Code of Commitment</a>
+        </div>
+    </footer>
+
+    <div id="last"><h3>PANJA Bank.  &copy; 2023-2024 All rights reserved.</h3></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BFADEC;
+}
+
+#headerDiv
+{
+    height: 220px;
+    width: auto;
+    border-bottom: 2px solid black;
+    display: flex;
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    position: relative;
+}
+
+#img 
+{
+    height: 180px;
+    width: 180px;
+    border: 2px solid black;
+    background-color: rgb(70, 28, 28);
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#img:hover 
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#logo 
+{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-left: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+#logo:hover 
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#textHeader
+{
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+#header1 
+{
+    font-size: 2.5em;
+    color: #004080; /* Dark blue color */
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Kalnia', serif;
+}
+
+#header2
+{
+    font-size: 1.1em;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+    font-family: 'Rethink Sans';
+}
+
+#icon 
+{
+    display: flex;
+    align-items: center;
+}
+
+#icon i 
+{
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #fff; /* Icon color */
+}
+
+#icon i.gg-notifications 
+{
+    position: relative;
+}
+
+#icon i.gg-notifications::after 
+{
+    content: attr(data-count);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c; /* Notification badge background color */
+    color: #fff; /* Notification badge text color */
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 0.8em;
+}
+
+footer 
+{
+    background-color: #835858;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons 
+{
+    margin-top: 20px;
+}
+
+.social-icons i 
+{
+    font-size: 32px;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover 
+{
+    color: #00bcd4; /* Change the color on hover */
+    cursor: pointer;
+}
+
+p.get-social 
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box-hover 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00bcd4;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer3{
+    margin: auto;
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: justify;
+}
+
+.footer3 a
+{
+    text-decoration: none;
+    color: burlywood;
+    
+}
+
+.footer3 a:hover
+{
+    text-decoration: underline;
+    border: 2px solid white;
+    padding: 10px;
+    color: #ddd;
+    transition: 0.8s;
+}
+
+#last
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+}
+
+
+
+
+
+#main
+{
+    position: relative;
+    padding: 20px;
+    border: 3px darkgoldenrod dashed;
+    height: auto;
+    border-bottom: none;
+    width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#login 
+{
+    height: 330px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login h2 
+{
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#login h3 
+{
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#login form input
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login h5
+{
+    color: #3498db;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta 
+{
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+
+.cta:before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta span 
+{
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg 
+{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before 
+{
+    width: 100%;
+    background: #ffab9d;
+}
+
+.cta:hover svg 
+{
+    transform: translateX(0);
+}
+
+.cta:active 
+{
+    transform: scale(0.96);
+}
+
+#newLogin
+{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#newLogin2
+{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#newLogin:hover , #newLogin2:hover
+{
+    color: black;
+}
+
+#newUser 
+{
+    height: 330px;
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+#newUser h3
+{
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
